@@ -1,0 +1,335 @@
+/* TYYLITIEDOSTO PORTFOLIOLLE*/
+
+/* Sivun oletusasetukset */
+
+:root {
+    --bg-color: #FFFFFF;
+    --main-color: #111111;
+    --text-color: #313131;
+    --link-color: #d4d4d3;
+    --box-background: #eee;
+    --highlight-color: #FFB347;
+    --active-box-color: #d4d4d3;
+}
+
+html {
+    margin-top: 100px;
+    color: var(--text-color);
+    margin-left: 25%;
+    margin-right: 25%;
+    font-family: 'Source Sans Pro', sans-serif;
+	background-color: var(--bg-color);
+    /*background-image: url("bg.png");
+    background-repeat: repeat;*/
+}
+
+/* Pääotsikon tyyli */
+h1, h1 a, h1 a:hover {
+    color: var(--main-color);
+    /*text-shadow: 1px 1px 4px black;*/
+    min-width: 400px;
+    text-align: left;
+    margin-bottom: 10px;
+    /*font-style: italic;*/
+    font-size: 40px;
+    text-decoration: none;
+}
+
+h2 {
+    color: var(--main-color);
+    /*text-shadow: 1px 1px 4px black;*/
+    min-width: 400px;
+    margin: 30px 20px 0 20px;
+    text-align: left;
+    font-style: underline;
+    font-size: 20px;
+    border-bottom: 1px solid var(--text-color);
+}
+
+.tutkinto {
+    margin: 0 20px 10px 20px;
+    font-family: 'Kanit', sans-serif;
+}
+
+.tutkinto h3 {
+    color: var(--main-color);
+    text-align: left;
+    margin: 0 0 0 0;
+    font-size: 16px;
+}
+
+.tutkinto li {
+    display: list-item;
+    padding: 0 0 5px 0;
+}
+
+.tutkinto a {
+    color: var(--main-color);
+    text-align: left;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.tutkinto a:hover {
+    color: var(--highlight-color);
+}
+
+/* Tässä laatikossa on koko sivun sisältö */
+main {
+    min-width: 480px;
+    background-color: var(--bg-color);
+    border-style: solid;
+    border-color: var(--main-color);
+    border-width: 1px;
+    box-shadow: 0 0 200px grey;
+    border-radius: 0 0 3em 3em;
+    overflow: hidden;
+}
+
+main p, a {
+    line-height: 1.6;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 20px 0 20px 0;
+}
+
+main a {
+    padding: 0;
+    color: var(--main-color);
+    text-align: left;
+}
+
+main a:hover {
+    padding: 0;
+    color: var(--highlight-color);
+    text-align: left;
+}
+
+/* Navigaatiopalkki */
+nav {
+    padding: 13px;
+    padding-left: 0px;
+    padding-right: 0px;
+    background-color: var(--main-color);
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    text-align: left;
+    border: var(--main-color);
+    border-bottom-style: solid;
+    border-width: 1px;
+}
+
+nav ul {
+    font-size: 0px;
+    padding: 0px;
+    margin: 0px;
+    color: var(--text-color);
+}
+
+nav li {
+    border-right: solid;
+    border-width: 1px;
+}
+
+nav a:link, nav a:visited {
+    font-size: 16px;
+    padding: 16px;
+    color: var(--link-color);
+    /*font-weight: bold;
+    font-style: italic;*/
+    text-decoration: none;
+    border-right: transparent;
+    border-left: transparent;
+    transition: 0.3s;
+}
+
+nav a:hover, nav a:active {
+    color: white;
+    background-color: var(--highlight-color);
+    text-shadow: 1px 1px 8px black;
+    /*border-radius: 4em;
+    border-style: solid;
+    border-color: white;
+    border-width: 2px;*/
+}
+
+/* Yhteystiedot sivun pohjaan */
+footer {
+    background-color: var(--main-color);
+    font-family: monospace;
+    font-size: 12px;
+    color: var(--text-color);
+    padding: 10px;
+    text-align: center;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    border-bottom: 1px solid;
+    clear: both;
+}
+
+footer li, footer a:link, footer a:visited {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--highlight-color);
+    text-decoration: none;
+}
+
+li {
+    display: inline-block;
+}
+
+img {
+    /*display: none;*/
+    border-style: solid;
+    border-width: 1px;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+.musaa {
+    font-family: monospace;
+    line-height: 1.1;
+    width: 400px;
+    height: 140px;
+    border: 1px solid var(--main-color);
+    background-color: var(--box-background);
+    border-radius: 2em;
+    margin: 20px;
+    padding: 20px;
+    font-size: 8pt;
+    float: right;
+}
+
+#last-otsikko {
+    text-decoration: none;
+    color: red;
+}
+
+/*#artisti {
+    margin: 10px 0 0 0;
+    float: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 180px;
+}*/
+
+#kappale {
+    margin: 10px 0 0 0;
+    float: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 70%;
+}
+
+#aika {
+    margin: 10px 0 0 20px;
+    float:left;
+}
+
+.koottava, #tavallinen_laatikko, .avoin_laatikko {   
+    background-color: var(--box-background);
+    color: var(--main-color);
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border: 1px solid grey;
+    text-align: left;
+}
+
+#tavallinen_laatikko {
+    width: inherit;
+    cursor: default;
+}
+
+.koottava h3 {
+    font-family: 'Kanit', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.koottava:hover {
+    background-color: var(--active-box-color);
+}
+
+.active {
+    background-color: var(--link-color);
+}
+
+.avoin_laatikko {
+    background-color: var(--active-box-color);
+    cursor: default;
+}
+
+.koottava:after {
+    color: var(--main-color);
+    font-weight: bold;
+    margin: 0px;
+    float: right;
+}
+
+.sisältö, .avoin_sisältö {
+    padding: 0;
+    display: none;
+    overflow: hidden;
+    background-color: var(--box-background);
+    border-width: 0 1px 1px 1px;
+    border-style: solid;
+    border-color: grey;
+    transition: max-height 0.2s ease-out;
+    font-size: 14px;
+}
+
+.sisältö > li, .avoin_sisältö > li {
+    border: none;
+    padding: 10px;
+    list-style: none;
+    border-bottom: 1px solid lightgrey;
+    font-size: 14px;
+}
+
+.avoin_sisältö {
+    transition: none;
+    display: block;
+}
+
+.kurssit {
+    padding: 10px;
+    display: none;
+    overflow: hidden;
+    background-color: var(--box-background);
+    border-bottom: 1px solid lightgrey;
+}
+
+.kurssit > li {
+    margin: 5px 0 0 30px;
+}
+
+.sisältö > p {
+    margin: 0px;
+}
+
+.sisältö .active, .sisältö > .koottava:hover, .avoin_sisältö .active, .avoin_sisältö > .koottava:hover {
+    font-weight: bold;
+}
+
+input, textarea {
+    box-sizing: border-box;
+    width: 50%;
+    margin: 0 0 5px 0;
+    border: 1px solid var(--main-color);
+    padding: 5px;
+}
+
+.sisältö > ul > li > a {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: bold;
+}

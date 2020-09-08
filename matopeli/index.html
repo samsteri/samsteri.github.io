@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+		<title>Matopeli</title>
+		
+		<style>
+			body {
+				background-color: rgb(46,35,46);
+				text-align: center;
+			}
+			#kentta {
+				margin: auto;
+				border: 4px ridge black;
+				background-color: rgb(148, 199, 161);
+			}
+			.boksi {
+				width: 610px;
+				border: none;
+				margin: auto;
+				float: top;
+				padding: 10px;
+			}
+			h1 {
+				color: lightgrey;
+			}
+			a {
+				text-decoration: none;
+				font-size: 24px;
+				color: lightgreen;
+				float: bottom;
+			}
+			a:hover {
+				color: yellow;
+			}
+			.pisteet {
+				font-size: 24px;
+				color: lightgrey;
+				float: bottom;
+				padding-top: 10px;
+			}
+		</style>
+    </head>    
+
+    <body>
+		<div class="boksi">
+			<h1>MATOPELI</h1>
+			<a href="../index.html">Takaisin portfolioon</a>
+		</div>
+
+		<canvas id="kentta" width="400" height="400"></canvas>
+
+		<div class="pisteet">Pisteet:&nbsp;<span class="piste">0</span></div>
+		<a href="index.html">Uusi peli?</a>
+		<script src="matopeli.js"></script>
+    </body>
+</html>
