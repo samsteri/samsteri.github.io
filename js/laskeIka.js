@@ -4,7 +4,6 @@ $(document).ready(function() {
 });
 
 function laskeIka() {
-    console.log("huutia");
     var ds = new Date();
     var sp = new Date(1993, 1, 28);
     var ika = ds - sp;
