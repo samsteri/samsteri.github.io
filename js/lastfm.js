@@ -1,6 +1,6 @@
 $(document).ready(function() {
     // Haetaan äskettäiset kappaleet last.fm-palvelusta laajennetuilla artisti-infoilla
-    var tracks = "http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=zampha&extended=1&api_key=599e68ee43a3505a3bcdc098f7c06f2a&format=json";
+    var tracks = "https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=zampha&extended=1&api_key=599e68ee43a3505a3bcdc098f7c06f2a&format=json";
     
     var es, kpl, pvm = new String();
 
